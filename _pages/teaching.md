@@ -42,19 +42,15 @@ nav: true
     <td class="cn">Computer Systems</td>
     <td class="sem">Fall 2020</td>
   </tr>
-  <tr>
-    <td class="cc">CSC 108</td>
-    <td class="cn">Introduction to Computer Programming</td>
-    <td class="sem">Fall 2019</td>
-  </tr>
 </table>​​​
 
 
 <style>
-.tab {border-collapse:collapse; display: table; width: 100%;}
-.tab .first {border-bottom:1px solid #EEE;}
-/*.tab .cc {display: table-cell; width: 100px;}​*/
-.tab .cn {display: table-cell; width: 500px;}​
-.tab .sem {display: table-cell; text-align: right;}​
+table { width: 750px; }
+tr.first {border-bottom:1px solid #EEE;}
+td.cc { width: 150px; }
+td.cn { width: 450px; }
+td.sem { text-align: right; }
 </style>
+
 
