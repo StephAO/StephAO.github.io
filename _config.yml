@@ -8,7 +8,7 @@ middle_name: T.
 last_name: Aroca-Ouellette
 email: stephane.aroca-ouellette@colorado.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  My personal site based on [*folio](https://github.com/bogoli/-folio).
+  My personal site based on: [*folio](https://github.com/bogoli/-folio).
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
