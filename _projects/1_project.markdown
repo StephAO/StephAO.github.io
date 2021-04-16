@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Physical Reasoning of Objects through Space and Time"
+title: "TBD"
 description: A probing dataset highlighting why the lack of real-world experience hinders language understanding.
 img: /assets/img/PROST.png
 importance: 1
