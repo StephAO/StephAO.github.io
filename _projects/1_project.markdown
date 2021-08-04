@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "TBD"
+title: "PROST: Physical Reasoning of Objects through Space and Time"
 description: A probing dataset highlighting why the lack of real-world experience hinders language understanding.
 img: /assets/img/PROST.png
 importance: 1
@@ -23,4 +23,4 @@ Children grab, push, and play with the objects around them to form concepts abou
 
 We conduct an extensive analysis of modern language models on PROST, which demonstrates that state-of-the-art pretrained models are weak at physical reasoning: they are influenced by the order in which answer options are presented to them; they struggle when the superlative in a question is inverted (e.g. most <-> least); and increasing the amount of pretraining data and parameters only yields minimal improvements. These results provide support for the hypothesis that current pretrained models' ability to reason about physical interactions is inherently limited by a lack of real world experience. By highlighting these limitations, we hope to motivate the development of models with a human-like understanding of the physical world.
 
-For more information see our [paper](#TODO_still_in_review) and our [github](#TODO_still_in_review)
+For more information see our [paper](https://aclanthology.org/2021.findings-acl.404.pdf) and our [github](https://github.com/nala-cub/prost)
