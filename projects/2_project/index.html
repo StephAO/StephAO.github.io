@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Stéphane T. Aroca-Ouellette | blank</title>
+<title>Stéphane T. Aroca-Ouellette | On Losses for Modern Language Models</title>
 <meta name="description" content="My personal site based on: [*folio](https://github.com/bogoli/-folio).
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/2_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -156,56 +156,30 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">On Losses for Modern Language Models</h1>
+    <p class="post-description">A thorough comparison of auxiliary pre-training tasks for BERT.</p>
+  </header>
 
+  <article>
+    <p>BERT, trained using a ‘masked language model’ (MLM) task and a ‘next sentence prediction’ (NSP) task, redefined the NLP landscape and, at it’s release, established itself as the state-of-the-art (SoTA) on many natural language understanding (NLU) benchmarks. Many models inspired by BERT have since surpassed its performance. However, in contrast to the original BERT paper, many obtained better results by excluding the NSP task. Some rely solely on a MLM variant, while others incorporate one or more different auxiliary loss functions, however there had yet to be a proper comparison between all these auxiliary tasks.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
-    
-  </ul>
+<p>With multi-task learning’s long history in transfer learning, its use in language understanding models deserved further exploration. For this project, we studied existing and novel auxiliary tasks in a BERT paradigm to guide future research in an informed manner. Specifically, we tested and provided insight on: 1) NSP’s effect on BERT pre-training; 2) the result of 14 other auxiliary tasks on BERT pre-training; 3) how to combine multiple tasks in BERT pre-training; and 4) the advantages of multi-task learning in BERT pre-training.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>By combining the top performing pre-training tasks, our final model (depicted below) managed to outperform BERT base using less a quarter of the amount of training data.</p>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid " src="/assets/img/olfmlm.jpg" alt="" title="PROST example" />
+    </div>
+</div>
+<div class="caption">
+    Example question from PROST.
+</div>
 
+<p>For more information, see our <a href="https://www.aclweb.org/anthology/2020.emnlp-main.403/">paper</a> and <a href="https://github.com/StephAO/olfmlm">github</a>.</p>
+
+  </article>
 
 </div>
 
